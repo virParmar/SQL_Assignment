@@ -9,6 +9,7 @@ PRODUCT_ID, INTERNAL_NAME, PRODUCT_TYPE_ID, NETSUITE_ID (or similar field indica
 
 ## Solution
 
+```sql
 select
 	pr.product_id,
 	pr.internal_name,
@@ -18,8 +19,9 @@ select
 from product pr
 join good_identification gi on pr.product_id = gi.product_id and gi.good_identification_type_id='ERP_ID'
 where gi.id_value is null or gi.id_value=''
+```
 
-file:///home/virendraparmar/Pictures/Screenshots/Screenshot%20from%202025-04-03%2012-15-52.png
+![alt text](image.png)
 
 ## Query Cost : 3.19
 
