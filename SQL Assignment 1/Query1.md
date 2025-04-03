@@ -14,7 +14,7 @@ ENTRY_DATE
 
 ### Solution :
 
-```
+```sql
 select
 p.party_id,
 pr.role_type_id,
