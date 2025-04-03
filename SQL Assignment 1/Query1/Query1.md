@@ -18,12 +18,12 @@ ENTRY_DATE
 
 ```sql
 select
-p.party_id,
-pr.role_type_id,
-pe.first_name,
-pe.last_name,
-cm.info_string as email,
-tn.contact_number as phone_number
+    p.party_id,
+    pr.role_type_id,
+    pe.first_name,
+    pe.last_name,
+    cm.info_string as email,
+    tn.contact_number as phone_number
 from party p
 join party_role pr on p.party_id = pr.party_id and pr.role_type_id='customer'
 join person pe on p.party_id = pe.party_id
