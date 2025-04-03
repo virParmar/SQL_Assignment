@@ -33,3 +33,4 @@ where p.CREATED_STAMP BETWEEN '2023-06-01 00:00:00' AND '2023-06-30 23:59:59'
 
 ![alt text](<Screenshot from 2025-04-03 09-59-27.png>)
 
+### Query cost : 16862.20
