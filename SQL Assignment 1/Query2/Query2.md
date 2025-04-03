@@ -4,7 +4,11 @@ Merchandising teams often need a list of all physical products to manage logisti
 
 ### Fields to Retrieve:
 
-PRODUCT_ID, PRODUCT_TYPE_ID, INTERNAL_NAME
+```
+PRODUCT_ID
+PRODUCT_TYPE_ID
+INTERNAL_NAME
+```
 
 ## Solution :
 
