@@ -1,0 +1,27 @@
+## Orders Completed Hourly
+
+## Business Problem:
+Operations teams may want to see how orders complete across the day to schedule staffing.
+
+## Fields to Retrieve:
+
+```
+TOTAL ORDERS
+HOUR
+```
+
+## Solution
+
+```sql
+select
+	count(oh.order_id) as TOTAL_ORDERS,
+    extract(hour from os.status_datetime) as HOUR
+from order_header oh
+join order_status os on oh.order_id = os.order_id
+where oh.status_id = 'order_completed'
+group by hour
+```
+
+![alt text](image.png)
+
+## Query Cost : 10675598
