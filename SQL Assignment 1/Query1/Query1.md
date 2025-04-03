@@ -1,18 +1,20 @@
-### New Customers Acquired in June 2023
+## New Customers Acquired in June 2023
 
-### Business Problem:
+## Business Problem:
 The marketing team ran a campaign in June 2023 and wants to see how many new customers signed up during that period.
 
-### Fields to Retrieve:
+## Fields to Retrieve:
 
+```
 PARTY_ID
 FIRST_NAME
 LAST_NAME
 EMAIL
 PHONE
 ENTRY_DATE
+```
 
-### Solution :
+## Solution :
 
 ```sql
 select
@@ -33,4 +35,4 @@ where p.CREATED_STAMP BETWEEN '2023-06-01 00:00:00' AND '2023-06-30 23:59:59'
 
 ![alt text](<Screenshot from 2025-04-03 09-59-27.png>)
 
-### Query cost : 16862.20
+## Query cost : 16862.20
